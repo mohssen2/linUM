@@ -1,4 +1,4 @@
-
+//library 1 by Mohssen
 float calc_resistance(int count, char conn, float *array)
 {
 	float result = 0.0;
