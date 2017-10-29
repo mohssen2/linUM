@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "resistance.h"
 #include "power.h"
+#include "e_resistance.h"
 
 int main ()
 {
 	//Code by Mohssen
 	int count, voltage, i, tmp_power; 
 	char conn;
-	float power_return, power_result, result;
+	float power_return, power_result, result, results[3], orig;
 
 	printf("Ange spänningskälla i V: ");
  	scanf("%d", &voltage);
@@ -34,9 +35,16 @@ int main ()
 	tmp_power = power_return*100;
 	power_result = tmp_power/100.0;
 	printf("Effekt:\n%.2f W\n", power_result);
-	//Code for library3 by x
-  	return 0;
+	//Code by Ashot
+//	int r=e_resistance(orig, results);
 
+//	for (int i=0; i<3;i++)
+//	{
+//		printf("%f\n", results[i]);
+//	}
+//	printf("%d", r);
+
+  	return 0;
 }
 
 
