@@ -31,18 +31,11 @@ int main ()
 	printf("Ersättningsresistans:\n%.1f ohm\n", calc_resistance(count, conn, array));
 	//Code by Tommy
 	//Needed to adjust the power value below, otherwise compiler rounds up the value
-	power_return =(calc_power_i(voltage, calc_resistance(count,conn,array)));
+	power_return =(calc_power_r(voltage, calc_resistance(count,conn,array)));
 	tmp_power = power_return*100;
 	power_result = tmp_power/100.0;
 	printf("Effekt:\n%.2f W\n", power_result);
-	//Code by Ashot
-//	int r=e_resistance(orig, results);
-
-//	for (int i=0; i<3;i++)
-//	{
-//		printf("%f\n", results[i]);
-//	}
-//	printf("%d", r);
+	//Code by Dennis
 
   	return 0;
 }
