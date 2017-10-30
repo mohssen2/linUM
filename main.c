@@ -35,14 +35,7 @@ int main ()
 	tmp_power = power_return*100;
 	power_result = tmp_power/100.0;
 	printf("Effekt:\n%.2f W\n", power_result);
-	//Code by Ashot
-//	int r=e_resistance(orig, results);
-
-//	for (int i=0; i<3;i++)
-//	{
-//		printf("%f\n", results[i]);
-//	}
-//	printf("%d", r);
+	//Code by Dennis
 
   	return 0;
 }
