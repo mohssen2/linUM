@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "resistance.h"
 #include "power.h"
-#include "e_resistance.h"
+// #include "e_resistance.h"    Mohssen kommenterat bort 
 
 int main ()
 {
